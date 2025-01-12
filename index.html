@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="my-modal-back disable">
+        <div class="my-modal d-flex align-items-center justify-content-center">
+            <div class="container">
+                <form method="POST">
+                    <button type="button" role="button" class="close-btn">X</button>
+                    <b>KONTAKTNÍ FORMULÁŘ - KOMPLEXNÍ SPOLUPRÁCE</b>
+                    <div class="row">
+                        <div class="cl col-lg-5">
+                            <label for="name">CELÉ JMÉNO:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="cl col-lg-7">
+                            <label for="name">VÁŠ E-MAIL:</label>
+                            <input type="text" id="email" name="name">
+                        </div>
+                        <div class="cl col-lg-5">
+                            <label for="name">+420: </label>
+                            <input type="text" id="number" name="name">
+                        </div>
+                        <div class="cl col-12">
+                            <label for="name">NAPIŠTE NÁM: </label>
+                            <textarea name="message" id=""></textarea>
+                        </div>
+                    </div>
+                    <p>JAK VÁS MŮŽEME KONTAKTOVAT ?</p>
+                    <div class="connect">
+                        <label for="connect"><input type="radio" name="connect"
+                                id="connect"><span>E-MAILEM</span></label>
+                        <label for="connect"><input type="radio" name="connect"
+                                id="connect"><span>TELEFONICKY</span></label>
+                    </div>
+                    <div class="form-bottom">
+                        <span>
+                            ODESÍLÁNÍM FORMULÁŘE POTVRZUJI SEZNÁMENÍ SE ZÁSADAMI ZPRACOVÁNÍ OSOBNÍCH ÚDAJŮ.
+                        </span>
+                        <input type="submit" value="ODESLAT">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo"><img loading="lazy" src="/img/image.webp" alt="logo" width="80"></div>
+                <nav class="header__menu">
+                    <ul>
+                        <li><a href="#gallery">ZÁZEMÍ</a></li>
+                        <li><a href="#trainers">TRENÉŘI</a></li>
+                        <li class="dropdown">
+                            <span>
+                                SLUŽBY <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#complex">KOMPLEXNÍ SPOLUPRÁCE</a></li>
+                                <li><a class="dropdown-item" href="#nutrion">NUTRIČNÍ TERAPIE</a></li>
+                                <li><a class="dropdown-item" href="#diagnostic">TĚLESNÁ DIAGNOSTIKA</a></li>
+                                <li><a class="dropdown-item" href="#book">E-BOOK</a></li>
+                                <li><a class="dropdown-item" href="#massage">MASÁŽE</a></li>
+                                <li><a class="dropdown-item" href="#flexibility">STREČINK & FLEXIBILITA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#lecture">SKUPINOVÉ LEKCE</a></li>
+                        <li><a href="#">REZERVACE</a></li>
+                        <li><a href="#contact">KONTAKT</a></li>
+                    </ul>
+                </nav>
+                <button class="hammenu"><img src="/img/hamburger.png" width="35px" height="35px" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <div class="header__bottom__line">
+        <button class="my-btnss" style="border: none;background-color: transparent;">
+            VYZKOUŠET SI 1. TRÉNINK ZDARMA
+        </button>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="banner__inner">
+                <h1>CHRÁM POHYBU</h1>
+                <p>PRIVATE FITNESS CLUB</p>
+                <img loading="lazy" src="/img/banner-icon.png" alt="icon" width="92">
+            </div>
+            <div class="banner__bottom">
+                <div></div>
+                <div><button><a href="#about"><img loading="lazy" src="img/scbr.png" alt="scroll"
+                                class="sc-img"></a></button></div>
+                <div class="socials">
+                    <p>SOCIAL</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/chram.pohybu/"><img loading="lazy" src="/img/fb.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.instagram.com/chrampohybu/"><img loading="lazy" src="/img/ig.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.tiktok.com/@chram_pohybu"><img loading="lazy" src="/img/tt.png"
+                                    alt=""></a></li>
+                        <li><a href="mailto:chrampohybu@email.cz"><img loading="lazy" src="/img/envelope.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="categories__cards">
+            <h2>SKUPINOVÉ <br> LEKCE</h2>
+            <button class="my-btnss">REZERVACE</button>
+        </div>
+        <div class="categories__cards">
+            <h2>ZMĚNA <br> POSTAVY</h2>
+            <button><a href="#complex">VÍCE INFORMACÍ</a></button>
+        </div>
+        <div class="categories__cards">
+            <h2>NUTRIČNÍ <br> TERAPIE</h2>
+            <button><a href="#nutrion">VÍCE INFORMACÍ</a></button>
+        </div>
+    </div>
+    <section class="about">
+        <h3 id="about">O NÁS</h3>
+        <hr>
+        <div class="container">
+            <div class="about__text">
+                Chrám pohybu je privátní fitness, kde se cvičí pouze pod dohledem trenérů. Na tréninku budete pouze vy
+                 a trenér. I v těch nejvytíženějších hodinách máte soukromí během tréninku. Rozhodli jsme se pro modul
+                soukromého fitness, abychom klientům přinesli maximální komfort a tím i lepší výsledky.
+                <br><br>  Zakládáme si na lidském přístupu a empatii. Ke každému přistupujeme individuálně –
+                konzultujeme celkový přístup k životnímu stylu, nastavujeme individuální tréninkový program, nutriční
+                plán i tělesnou diagnostiku.
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <h3 id="gallery">ZÁZEMÍ</h3>
+        <hr>
+        <div class="container">
+            <div class="gallery-images">
+                <a href="/img/1.webp" data-fancybox="gallery"><img src="/img/1.webp" alt="gallery"></a>
+                <a href="/img/2.webp" data-fancybox="gallery"><img src="/img/2.webp" alt="gallery"></a>
+                <a href="/img/3.webp" data-fancybox="gallery"><img src="/img/3.webp" alt="gallery"></a>
+                <a href="/img/4.webp" data-fancybox="gallery"><img src="/img/4.webp" alt="gallery"></a>
+                <a href="/img/5.webp" data-fancybox="gallery"><img src="/img/5.webp" alt="gallery"></a>
+                <a href="/img/6.webp" data-fancybox="gallery"><img src="/img/6.webp" alt="gallery"></a>
+                <a href="/img/7.webp" data-fancybox="gallery"><img src="/img/7.webp" alt="gallery"></a>
+                <a href="/img/8.webp" data-fancybox="gallery"><img src="/img/8.webp" alt="gallery"></a>
+                <a href="/img/9.webp" data-fancybox="gallery"><img src="/img/9.webp" alt="gallery"></a>
+                <a href="/img/10.webp" data-fancybox="gallery"><img src="/img/10.webp" alt="gallery"></a>
+                <a href="/img/11.webp" data-fancybox="gallery"><img src="/img/11.webp" alt="gallery"></a>
+                <a href="/img/12.webp" data-fancybox="gallery"><img src="/img/12.webp" alt="gallery"></a>
+                <a href="/img/13.webp" data-fancybox="gallery"><img src="/img/13.webp" alt="gallery"></a>
+                <a href="/img/14.webp" data-fancybox="gallery"><img src="/img/14.webp" alt="gallery"></a>
+                <a href="/img/15.webp" data-fancybox="gallery"><img src="/img/15.webp" alt="gallery"></a>
+            </div>
+            <div class="gallery-scroll">
+                <div class="gallery-scroll-thumb"></div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <h3 id="advantages">VÝHODY</h3>
+        <hr>
+        <div class="container">
+            <div class="advntages__inner">
+                <div class="advantages__card">
+                    <img src="/img/adv1.png" width="70px" alt="">
+                    <p>SOUKROMÉ <br> ZÁZEMÍ</p>
+                </div>
+                <div class="advantages__card">
+                    <img src="/img/adv2.png" width="70px" alt="">
+                    <p> PROFESIONÁLNÍ <br> VYBAVENÍ </p>
+                </div>
+                <div class="advantages__card">
+                    <img src="/img/adv3.png" width="70px" alt="">
+                    <p>PLNĚ VYBAVENÝ <br> BAR</p>
+                </div>
+                <div class="advantages__card">
+                    <img src="/img/adv4.png" width="70px" alt="">
+                    <p> MOTIVACE <br> PODPORA</p>
+                </div>
+                <div class="advantages__card">
+                    <img src="/img/adv5.png" width="70px" alt="">
+                    <p>INDIVIDUÁLNÍ <br> PŘÍSTUP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trainers">
+        <h3 id="trainers">TRÉNEŘI</h3>
+        <hr>
+        <div class="container">
+            <div class="trainers__inner">
+                <div class="trainer__card">
+                    <img src="/img/trainer1.webp" width="100%" alt="trainer">
+                    <p>KAREL HOLEČEK, DIS.</p>
+                    <span>SILOVO-KONDIČNÍ TRENÉR <br>
+                        NUTRIČNÍ TERAPEUT</span>
+
+                    <ul>
+                        <li><a href="https://www.facebook.com/karel.holecek.training"><img src="/img/fb.png" alt=""></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/karel.holecek/"><img src="/img/ig.png" alt=""></a></li>
+                        <li><a href="mailto:chrampohybu@email.cz"><img src="/img/envelope.png" alt=""></a></li>
+                    </ul>
+                    <button class="tgl">VÍCE INFORMACÍ</button>
+                    <p class="trainer-info">
+                        Zakladatel a hlavní silovo-kondiční trenér Chrámu pohybu. Jsem vystudovaný diplomovaný nutriční
+                        terapeut se zdravotním zaměřením  a certifikovaný trenér s více než 10letou praxí.
+                        <br><br>
+                        Mojí vizí bylo vytvořit privátní zázemí pro lidi, kteří mají předsudky a strach z komerčního
+                        prostředí s velkým počtem lidí. Nabídnout jim komfortní prostředí, kam se budou rádi vracet a
+                        cítit se jako doma.
+                        <br><br>
+                        Sestavil jsem skvělý tým lidí, který svoji práci dělá zodpovědně, s láskou a nadšením. Každý se
+                        specializujeme na jinou oblast a tím se zároveň doplňujeme.
+                    </p>
+                </div>
+                <div class="trainer__card">
+                    <img src="/img/trainer2.webp" width="100%" alt="trainer">
+                    <p>KLÁRA KAISER</p>
+                    <span>HAND-BALANCING <br>
+                        STREČINK & FLEXIBILITA <br>
+                        MASÁŽE</span>
+                    <ul>
+                        <li><a href="https://www.facebook.com/klarakaiser.trenerka"><img src="/img/fb.png" alt=""></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/klarakaiser.trenerka/"><img src="/img/ig.png" alt=""></a>
+                        </li>
+                        <li><a href="mailto:Klara.kaiserova@gmail.com"><img src="/img/envelope.png" alt=""></a></li>
+                    </ul>
+                    <button class="tgl">VÍCE INFORMACÍ</button>
+                    <p class="trainer-info">
+                        Profesionální akrobatka již přes 25 let.  Se svým akrobatickým vystoupením jsem procestovala 2/3
+                        evropských států, celé Spojené státy americké  a nakonec i Arabské Emiráty.
+                        <br><br>
+                        Před 5 lety jsem se rozhodla mé velké cestování ukončit a zůstat  v milované rodné zemi a mé
+                        akrobatické zkušenosti získané převážně od ruských, ukrajinských, italských a rumunských
+                        profesionálních akrobatů a trenérů předávat dál těm, kteří mají vášeň  a respekt k pohybu.
+                        <br><br>
+                        Aktuálně se věnuji soukromým  i skupinovým lekcím stretchingu, flexibilitě a také
+                        hand-balancingu, což byla má celoživotní disciplína, kterou jsem se učila od mých 7 let.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="complex">
+        <h3 id="complex">KOMPLEXNÍ SPOLUPRÁCE</h3>
+        <hr>
+        <div class="container">
+            <p class="complex__text">
+                Změna životního stylu vyžaduje v začátcích spoustu něpříjemných změn a odhodlání udělat ten první krok.
+                Pokud si nejste jisti, zda tu cestu zvládnete sami, tak jsme tady pro vás a vše vás od základu naučíme.
+                <br><br>
+                Ten první krok je ale na vás. Kontakujte nás pomocí kontaktního formuláře, e-mailu nebo telefonicky.
+                Ozveme se vám co nejdříve zpět a domluvíme další kroky.
+            </p>
+            <div class="row row-gap-3 justify-content-evenly">
+                <div class="col-lg-3">
+                    <div class="complex__number text-center"><img src="/img/num1.png" alt="number" width="75"
+                            height="75"></div>
+                    <div class="complex__card">
+                        <b>OSOBNÍ SCHŮZKA</b>
+                        <p>Před prvním tréninkem je potřeba se nejdříve poznat. Společně si projdeme zázemí, zjistíme od
+                            vás potřebné informace, vaše osobní cíle/motivaci a na závěr si vysvětlíme nejefektivnější
+                            možnosti řešení.</p>
+                        <hr class="complex__hr">
+                        <i>* Osobní schůzka je nezávazná a zdarma.</i>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="complex__number text-center"><img src="/img/num2.png" alt="number" width="75"
+                            height="75"></div>
+                    <div class="complex__card">
+                        <b>KOMPLEXNÍ SPOLUPRÁCE <br>
+                            + <br>
+                            VSTUPNÍ DIAGNOSTIKA</b>
+                        <p>
+                            Pokud to oboum stranám bude dávat smysl, tak si vysvětlíme podmínky spolupráce, která je
+                            komplexní a zahrnuje  i nutriční plán, včetně odborné nutriční terapie - klient dostane vše
+                            v jedné službě.<br><br>
+                            Dalším obsahem je tělesná diagnostika pomocí chytré váhy, která na základě bioimpedance
+                            zhodnotí aktuální rozpoložení vašeho těla a případné zdravotní rizika.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="complex__number text-center"><img src="/img/num3.png" alt="number" width="75"
+                            height="75"></div>
+                    <div class="complex__card">
+                        <b>SPOLEČNÝ CÍL</b>
+                        <p>
+                            Trenér pro vás následně připraví individuální nutriční a tréninkový plán na míru. Po
+                            celkovém nastavení  a upřesnění detailů už nám nic nebrání v cestě za vysněnou
+                            postavou.<br><br>
+                            V Chrámu pohybu budete po celou dobu spolupráce pod dohledem zkušeného trenéra, abychom
+                            společně došli k tíženým výsledkům.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center" style="padding-inline:0;">
+                    <div class="col-lg-3 text-right ch-none">
+                        <img src="/img/vectorleft.png"  alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="complex__main__card text-dark">
+                            <b>OBSAH SPOLUPRÁCE:</b>
+
+                            <ul>
+                                <li><img src="/img/check.png" alt="check" width="20" height="20px"><span>Vstupní tělesná
+                                        diagnostika</span></li>
+                                <li><img src="/img/check.png" alt="check" width="20"
+                                        height="20px"><span>Nutriční/tréninkový
+                                        <br> program na míru</span></li>
+                                <li><img src="/img/check.png" alt="check" width="20" height="20px"><span>Motivace a
+                                        podpora
+                                        24/7 <br> po dobu spolupráce</span></li>
+                                <li><img src="/img/check.png" alt="check" width="20" height="20px"><span>Privátní zázemí
+                                        v
+                                        době <br>tréninku</span></li>
+                                <li><img src="/img/check.png" alt="check" width="20" height="20px"><span>Možnost výběru
+                                        hudby <br> během tréninku</span></li>
+                                <li><img src="/img/check.png" alt="check" width="20" height="20px"><span>Iontový nápoj
+                                        na
+                                        baru <br> zdarma</span></li>
+                                <li><img src="/img/check.png" alt="check" width="20" height="20px"><span>Zvýhodněná cena
+                                        masáží <br> a lekcí strečinku</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ch-none">
+                        <img src="/img/vectorright.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main__form">
+        <div id="form" class="container">
+            <form method="POST">
+                <b>KONTAKTNÍ FORMULÁŘ - KOMPLEXNÍ SPOLUPRÁCE</b>
+                <div class="row">
+                    <div class="cl col-lg-5">
+                        <label for="name">CELÉ JMÉNO:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="cl col-lg-7">
+                        <label for="name">VÁŠ E-MAIL:</label>
+                        <input type="text" id="email" name="name">
+                    </div>
+                    <div class="cl col-lg-5">
+                        <label for="name">+420: </label>
+                        <input type="text" id="number" name="name">
+                    </div>
+                    <div class="cl col-12">
+                        <label for="name">NAPIŠTE NÁM: </label>
+                        <textarea name="message" id=""></textarea>
+                    </div>
+                </div>
+                <p>JAK VÁS MŮŽEME KONTAKTOVAT ?</p>
+                <div class="connect">
+                    <label for="connect"><input type="radio" name="connect" id="connect"><span>E-MAILEM</span></label>
+                    <label for="connect"><input type="radio" name="connect"
+                            id="connect"><span>TELEFONICKY</span></label>
+                </div>
+                <div class="form-bottom">
+                    <span>
+                        ODESÍLÁNÍM FORMULÁŘE POTVRZUJI SEZNÁMENÍ SE ZÁSADAMI ZPRACOVÁNÍ OSOBNÍCH ÚDAJŮ.
+                    </span>
+                    <input type="submit" value="ODESLAT">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="lecture">
+        <h3 id="lecture">SKUPINOVÉ LEKCE</h3>
+        <hr>
+        <div class="container">
+            <div class="lecture__inner">
+                <div class="lec__card">
+                    <div class="lecture__cards">
+                        <strong>ROZVRH </strong>
+                        <b>SKUPINOVÝCH <br> LEKCÍ</b>
+                    </div>
+                </div>
+                <div class="lec__card">
+                    <div class="lecture__cards">
+                        <strong>PONDĚLÍ </strong>
+                        <b>HAND BALANCING (STOJKY)</b>
+                        <button class="modal-btn my-btnss">REZERVACE</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="toggle-arrow" width="20px"
+                                height="20px" class=""></button>
+                    </div>
+                    <div class="trainer-info">
+                        <b>Hand-balancing (stojky)</b>
+                        <p>
+                            Stojkové lekce pro úplné začátečníky i pokročilé. Pro muže i ženy. Náplní této lekce bude
+                            teoretická výuka, nutné základy stretchingu, základní technické kroky ve stojce a
+                            samozřejmě také bezpečnost při této krásné disciplíně, která vyžaduje i spoustu koncentrace.
+                        </p>
+                    </div>
+                </div>
+                <div class="lec__card">
+                    <div class="lecture__cards">
+                        <strong>ÚTERÝ + ČTVRTEK
+                        </strong>
+                        <b>KRUHOVÝ TRÉNINK (HIIT) - ŽENY
+                        </b>
+                        <button class="modal-btn my-btnss">REZERVACE</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="toggle-arrow" width="20px"
+                                height="20px" class=""></button>
+
+                    </div>
+                    <div class="trainer-info">
+                        <b>Kruhový trénink (HIIT) - ženy</b>
+                        <p>
+                            Kruhový silový trénink pouze pro ženy kombinuje různorodé cviky pro posílení a tvarování
+                            postavy. Zaměřuje se na oblasti, které ženy často chtějí zlepšit, jako jsou břicho, hýždě a
+                            stehna.
+                            <br><br>
+                            Je také skvělým pomocníkem na podporu hubnutí a zvýšení fyzické kondice. Trénink je
+                            rozdělený na několik různých stanovišt s vyšší intenzitou v zátěži a kratší dobou odpočinku.
+                            Ideální forma pohybu pro ženy, které chtějí být ve formě a cítit se skvěle.
+                        </p>
+                    </div>
+                </div>
+                <div class="lec__card">
+                    <div class="lecture__cards">
+                        <strong>PONDĚLÍ + STŘEDA </strong>
+                        <b>KRUHOVÝ TRÉNINK (HIIT) - MIX
+                        </b>
+                        <button class="modal-btn my-btnss">REZERVACE</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="toggle-arrow" width="20px"
+                                height="20px" class=""></button>
+
+                    </div>
+                    <div class="trainer-info">
+                        <b>Kruhový trénink (HIIT) - mix</b>
+                        <p>
+                            Kruhový silový trénink pro muže i ženy (mix) je skvělým pomocníkem NA podporu hubnutí,
+                            posílení svalů a zvýšení fyzické kondice. Trénink je rozdělený na několik různých stanovišt
+                            s vyšší intenzitou v zátěži a kratší dobou odpočinku. Ideální forma pohybu pro všechny,
+                            kteří chtějí být ve formě, cítit se skvěle  a poznat nové lidi.
+                        </p>
+                    </div>
+                </div>
+                <div class="lec__card">
+                    <div class="lecture__cards">
+                        <strong>PÁTEK </strong>
+                        <b>STREČINK + FLEXIBILITA</b>
+                        <button class="modal-btn my-btnss">REZERVACE</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="toggle-arrow" width="20px"
+                                height="20px" class=""></button>
+
+                    </div>
+                    <div class="trainer-info">
+                        <b>Strečink & Flexibilita</b>
+                        <p>
+                            Stretching/protahování celého těla. Pokud máte sedavé zaměstnání, cítíte se zkráceni nebo
+                            vás rozsahy omezují v každodenním pohybu  a při sportu, tak přijďte vyzkoušet tuto lekci.
+                            Cíleně se zaměříme na nedostatečné pohybové rozsahy vašeho těla.
+                        </p>
+                    </div>
+                </div>
+                <div class="lec__card">
+                    <div class="lecture__cards">
+                        <strong>ČTVRTEK + NEDĚLĚ </strong>
+                        <b>BOX</b>
+                        <button class="modal-btn my-btnss">REZERVACE</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="toggle-arrow" width="20px"
+                                height="20px" class=""></button>
+
+                    </div>
+                    <div class="trainer-info">
+                        <b>Box</b>
+                        <p>
+                            Lekce určená pro začátečníky. Základní prioritou je všestranný poybový rozvoj a zlepšování
+                            koordinace s průpravnými cvičeními, nácvikem úderů, obran, úhybů a jejich kombinacemi.
+                            Stínovým boxem,  s boxem na lapy, boxem do pytlů, kondičním tréninkem, posilováním i
+                            strečinkem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nutrion">
+        <h3 id="nutrion">NUTRIČNÍ TERAPIE</h3>
+        <hr>
+        <div class="container">
+            <p class="mb-5">Ať už je váš cíl jakýkoliv, tak výživa bude hrát klíčovou roli a bude nedílnou součástí vaši
+                cesty.
+                Dohromady  s cíleným tréninkem maximalizuje výsledky a urychluje vaši snahu za vytouženou
+                postavou. <br><br> Individuální poradenství s racionálními prvky výživy bez extrémů a „zázračných
+                produktů“ na
+                který dnešní trh cílí.</p>
+            <b>Nutriční poradenství v oblasti</b>
+            <ul>
+                <li>Zdravého hubnutí s udržitelnými výsledky</li>
+                <li>Smysluplného zvýšení hmotnosti</li>
+                <li>Zlepšení stravovacích návyků a výkyvů energie během dne</li>
+                <li>Léčebná výživa při zdravotních omezeních (alergie, intolerance a jiné omezenÍ)</li>
+                <li>Zlepšení sportovního výkonu a regenerace (včetně doporučené suplementace pro daný sport)</li>
+                <li>Výživa těhotných a kojících žen</li>
+                <li>Výživa dětí a seniorů</li>
+            </ul>
+            <div class="nutrion__inner">
+                <div class="nutrion__card">
+                    <div class="nutrion__card__inner">
+                        <strong>JEDNORÁZOVÁ KONZULTACE <br>
+                            (60 MINUT)
+                        </strong>
+                        <button class="prc my-btnss">990 Kč</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                height="20px"></button>
+                    </div>
+                    <div class="trainer-info">
+                        <b>JEDNORÁZOVÁ KONZULTACE (60 MINUT)</b>
+                        <p>Na e-mail nám zašlete váš aktuální jídelníček za 5 dnů, který vyhodnotíme. Poté se v
+                            domluveném termínu sejdeme a provedeme tělesnou diagnostiku. Na závěr si zhodnotíme vaše
+                            stravovací návyky  s následným doporučením na zlepšení. Konzultace je vhodná pro ty, kteří
+                            se ve výživě orientují a potřebují probrat určité nejasnosti.</p>
+                    </div>
+                </div>
+                <div class="nutrion__card">
+                    <div class="nutrion__card__inner">
+                        <strong>JEDNORÁZOVÁ KONZULTACE - PRO PÁR (90 MINUT)<br>
+
+                        </strong>
+
+
+                        <button class="prc my-btnss">1.490 Kč</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                height="20px"></button>
+                    </div>
+                    <div class="trainer-info">
+                        <b>JEDNORÁZOVÁ KONZULTACE - PRO PÁR (90 MINUT)</b>
+                        <p> Na e-mail nám v páru zašlete váš aktuální jídelníček za 5 dnů, který vyhodnotíme. poté se v
+                            domluveném termínu sejdeme a provedeme tělesnou diagnostiku. Na závěr si zhodnotíme vaše
+                            stravovací návyky  s následným doporučením na zlepšení. Konzultace je vhodná pro ty, kteří
+                            se ve výživě orientují a potřebují probrat určité nejasnosti.</p>
+                    </div>
+                </div>
+                <div class="nutrion__card">
+                    <div class="nutrion__card__inner">
+                        <strong>JÍDELNÍČEK NA MÍRU <br>
+                            (ELEKTRONICKY <br>
+                            E-MAILEM)
+
+                        </strong>
+
+
+                        <button class="prc my-btnss">2.990 Kč</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                height="20px"></button>
+                    </div>
+                    <div class="trainer-info">
+                        <b> JÍDELNÍČEK NA MÍRU
+                            (ELEKTRONICKY
+                            E-MAILEM)
+                        </b>
+                        <p>Na e-mail nám zašlete váš aktuální jídelníček za 5 dnů a vyplněný vstupní dotazník, který
+                            vyhodnotíme. Poté se  v domluveném termínu sejdeme, provedeme tělesnou diagnostiku  a
+                            probereme s vámi jídelníček. <br> <br>
+                            Na základě výsledků z tělesné diagnostiky vám sestavíme jídelníček na míru, který vám
+                            odešleme elektronicky e-mailem, včetně výsledků tělesné diagnostiky.
+                        </p>
+                    </div>
+                </div>
+                <div class="nutrion__card">
+                    <div class="nutrion__card__inner">
+                        <strong>JÍDELNÍČEK NA MÍRU <br>
+                            (TISKOVÁ PODOBA + <br>
+                            30 MINUT KONZULTACE)
+
+                        </strong>
+
+
+                        <button class="prc my-btnss">3.990 Kč</button>
+                        <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                height="20px"></button>
+                    </div>
+                    <div class="trainer-info">
+                        <b> JÍDELNÍČEK NA MÍRU (TISKOVÁ PODOBA S 30 MINUTOVOU KONZULTACÍ)</b>
+                        <p>Na e-mail nám zašlete váš aktuální jídelníček za 5 dnů a vyplněný vstupní dotazník, který
+                            vyhodnotíme. Poté se  v domluveném termínu sejdeme, provedeme tělesnou diagnostiku  a
+                            probereme s vámi jídelníček <br> <br>
+                            Na základě výsledků  z tělesné diagnostiky vám sestavíme jídelníček na míru, který na příští
+                            schůzce dostanete v tiskové podobě, včetně výsledků tělesné diagnostiky s 30 minutovou
+                            konzultací s vysvětlením.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="diagnostic">
+        <h3 id="diagnostic">TĚLESNÁ DIAGNOSTIKA</h3>
+        <hr>
+        <div class="container">
+            <p class="my">Tělesná diagnostika pomocí chytré váhy funguje na principu bioimpedance. Přes elektrody na
+                váze je do těla
+                vpuštěn nízký elektrický odpor, který přes vodivé tkáně v těle změří vaše tělesné hodnoty. Bioimpedance
+                je
+                jednou z nejpřesnějších metod, kterou zjistíte rozšířené ukazatele vašeho aktuálního tělesného
+                rozpoložení,
+                ale  i možných rizik spojené se zdravím, které vám běžná osobní váha neukáže <br><br>
+                Pokud začínáme se změnou životního stylu a sledujeme pouze číslo na osobní váze, tak nepoznáme změny
+                poměru
+                vody, tuku a svalů - proto je důležité pravidelně kontrolovat výsledky se všemi zmíněnými ukazateli, aby
+                vaše motivace neklesala a ujistili jste se, že jdete správným směrem. Samotná diagnostika je velmi
+                rychlá,
+                bezbolestná a výstupní materiály velmi přehledné.
+            </p>
+            <div class="row row-gap-3 rowmy">
+                <div class="col-md-6">
+                    <b>Jaké hodnoty po změření zjistíte ?</b>
+                    <ul>
+                        <li>Segmentální tělesnou analýzu</li>
+                        <li>Celkovou hmotnost</li>
+                        <li>BMI(body mass index)</li>
+                        <li>Tělesný tuk</li>
+                        <li>Hmotnost svalů</li>
+                        <li>Kvalitu svalů</li>
+                        <li>Vaši typologii těla</li>
+                        <li>Hmotnost kostí</li>
+                        <li>Viscerální tuk</li>
+                        <li>Bazální metabolismus</li>
+                        <li>Metabolický věk</li>
+                        <li>Celkové množství tělesné vody</li>
+                        <li>Srdeční frekvenci</li>
+                    </ul>
+                    <b>Kdy diagnostiku nedoporučujeme ?</b>
+                    <ul>
+                        <li>Těhotenství</li>
+                        <li>V průběhu menstruačního cyklu</li>
+                        <li>Implantace kardiostimulátoru</li>
+                        <li>Po intenzivním tréninku</li>
+                        <li>Při znemožnění kontaktu s elektrodami (např. sádra apod.)</li>
+                    </ul>
+                    <b>Před diagnostikou je vhodné:</b>
+                    <ul>
+                        <li>Přijít ráno nalačno nebo 2-3 hodiny po jídle a pití</li>
+                        <li>Použít toaletu</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="/img/80a8b18f95eee2c53a2ee6778e69ad03.webp" alt="diagnostic" width="100%" height="714px">
+                </div>
+            </div>
+            <section>
+                <div class="nutrion__inner">
+                    <div class="nutrion__card">
+                        <div class="nutrion__card__inner">
+                            <strong>ANALÝZA TĚLESNÉHO <br> SLOŽENÍ - BEZ <br> VYSVĚTLENÍ (10 MINUT)
+                            </strong>
+                            <button class="prc my-btnss">290 Kč</button>
+                            <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                    height="20px"></button>
+                        </div>
+                        <div class="trainer-info">
+                            <b>Analýza tělesného složení (10 minut)</b>
+                            <p>Měření by mělo proběhnout ideálně na lačno. Pokud se však dostavíte během dne, tak je
+                                vhodné aspoň 3 hodiny před měřením nepít a nejíst, aby nedošlo k ovlivnění výsledků.
+                                Výsledky vám poté odešleme  v elektronické podobě na e-mail. Pro ideální srovnatelnost
+                                výsledků je důležité měření opakovat v podobnou denní dobu.</p>
+                        </div>
+                    </div>
+                    <div class="nutrion__card">
+                        <div class="nutrion__card__inner">
+                            <strong>ANALÝZA TĚLESNÉHO <br> SLOŽENÍ - S VYSVĚTLENÍM <br> (20 MINUT)
+                            </strong>
+
+
+                            <button class="prc my-btnss">390 Kč</button>
+                            <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                    height="20px"></button>
+                        </div>
+                        <div class="trainer-info">
+                            <b>Analýza tělesného složení  s vysvětlením výsledků  (20 minut)</b>
+                            <p>Měření by mělo proběhnout ideálně na lačno. Pokud se však dostavíte během dne, tak je
+                                vhodné aspoň 3 hodiny před měřením nepít a nejíst, aby nedošlo k ovlivnění výsledků.
+                                Výsledky si následně vysvětlíme, krátce zhodnotíme a poté odešleme v elektronické podobě
+                                na e-mail pro ideální srovnatelnost výsledků je důležité měření opakovat v podobnou
+                                denní dobu.</p>
+                        </div>
+                    </div>
+                    <div class="nutrion__card">
+                        <div class="nutrion__card__inner">
+                            <strong>BALÍČEK 3 MĚŘENÍ <br>
+                                (3X10 MINUT)
+
+                            </strong>
+
+
+                            <button class="prc my-btnss">690 Kč</button>
+                            <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                    height="20px"></button>
+                        </div>
+                        <div class="trainer-info">
+                            <b> BALÍČEK 3 MĚŘENÍ
+                                (3X10 MINUT)
+                            </b>
+                            <p>Výhodnější balíček, který obsahuje celkem 3 měření  po 10 minutách.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="book">
+        <h3 id="book">E-BOOK</h3>
+        <hr>
+        <div class="container">
+            <p class="my">
+                Jak chcete kvalitně trénovat, regenerovat, zlepšit odezvu hormonálního systému, zajistit dostatek
+                energie, když tělu nedáte ty správné živiny? Jak se chcete posunout na vyšší úroveň bez efektivního
+                tréninku a dostatečné regenerace? Jak chcete uspět a být lepší bez správně nastavené výživy a doplňků
+                stravy ? <br><br>
+                Na tohle vše vám odpoví elektronické knižní e-booky, které mají oba dohromady přes 30 stran.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="nutrion__inner">
+                        <div class="nutrion__card">
+                            <div class="nutrion__card__inner">
+                                <button class="prc my-btnss">790 Kč</button>
+                                <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                        height="20px"></button>
+                            </div>
+                            <div class="trainer-info">
+                                <b>Obsah</b>
+                                <p>
+                                <ul>
+                                    <li>Úvod – osobní pohled a moje zkušenost</li>
+                                    <li>Osobní přesvědčení</li>
+                                    <li>Sacharidy – primární zdroj paliva pro výkon
+                                        <ul>
+                                            <li>Glykemický index – jak ho využít pro svůj prospěch?</li>
+                                        </ul>
+                                    </li>
+                                    <li>Bílkoviny</li>
+                                    <li>Tuky – vhodné druhy pro výkon
+                                        <ul>
+                                            <li>Omega 3 – mastné kyseliny</li>
+                                        </ul>
+                                    </li>
+                                    <li>Voda a sportovní nápoje
+                                        <ul>
+                                            <li>Hydratace před, během a po výkonu</li>
+                                            <li>Dehydratace</li>
+                                        </ul>
+                                    </li>
+                                    <li>Nutriční timing
+                                        <ul>
+                                            <li>Strava před výkonem</li>
+                                            <li>Strava během výkonu</li>
+                                            <li>Strava po výkonu</li>
+                                        </ul>
+                                    </li>
+                                    <li>Příklad a zpracování individuálního jídelníčku</li>
+                                    <li>Závěr a doporučení v praxi </li>
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="nutrion__card">
+                            <div class="nutrion__card__inner">
+
+
+
+                                <button class="prc my-btnss">790 Kč</button>
+                                <button class="tgl tgl-img"><img src="/img/tgl.png" alt="tgl" width="20px"
+                                        height="20px"></button>
+                            </div>
+                            <div class="trainer-info">
+                                <b>Úvod</b>
+                                <p>
+                                <ul>
+                                    <li>Deficitní doplňky stravy – základní pyramida</li>
+                                    <li>Sacharidy – primární zdroj paliva pro výkon
+                                        <ul>
+                                            <li>Hořčík</li>
+                                            <li>Zinek</li>
+                                            <li>Omega 3-MK</li>
+                                        </ul>
+                                    </li>
+                                    <li>Kvalitní multivitamin</li>
+                                    <li>Podpora výkonnosti
+                                        <ul>
+                                            <li>Beta-alanin</li>
+                                            <li>Citruline malate</li>
+                                            <li>Kofein</li>
+                                            <li>Protein – Hydro DH32</li>
+                                            <li>Vitargo</li>
+                                        </ul>
+                                    </li>
+                                    <li>Závěr a doporučení</li>
+                                    <li>Bibliografie</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="/img/book1.webp" alt="" width="100%">
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="/img/book2.webp" alt="" width="100%">
+                        </div>
+                        <div class="col-12">
+                            <button class="prc my-btnss" style="height:50px;">FULL PACK <br> 1.090 Kč</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="massage">
+        <h3 id="massage">MASÁŽE</h3>
+        <hr>
+        <div class="container">
+            <div class="my">
+                Na zmírnění bolesti zad nebo ztuhlosti šíje, uvolnění těla a mysli skvěle pomáhají relaxační masáže.
+                Pravidelnou masáží snižujeme nahromaděné napětí, staženým bolavým svalům navracíme zpět jejich pružnost
+                a tím nastává kýžená úleva.
+            </div>
+            <div class="massage__inner mb-5">
+                <img src="/img/mas1.webp" alt="" width="100%" height="420px">
+                <img src="/img/mas2.webp" alt="" width="100%" height="420px">
+            </div>
+            <b>U nás najdete několik druhů relaxačních masáží zaměřené na různé účely:</b>
+            <ul>
+                <li>Indická masáž </li>
+                <li>Baňková masáž</li>
+                <li>Masáž s lávovými kameny</li>
+                <li>Anticelulitidní masáž</li>
+                <li>Bambusovou masáž</li>
+                <li>Havajskou masáž lomi lomi.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="flexibility">
+        <h3 id="flexibility">STREČINK & FLEXIBILITA</h3>
+        <hr>
+        <div class="container">
+            <p class="my">Strečink je základem prevence proti zranění - pomocí vhodných cviků posilujeme svalová vlákna,
+                šlachy, které pak následně protahujeme. Má kladný vliv i na váš krevní oběh. Svaly se lépe prokrvují,
+                což znamená, že jsou do nich efektivněji přinášeny živiny a rychleji se odplavují odpadní látky.</p>
+            <b>Výhody:</b>
+            <ul>
+                <li>Výživa svalů (lepší přísun kyslíku, krve a živin)</li>
+                <li>Pružnost svalů, vazů a pohyblivost kloubů</li>
+                <li>Urychlení regenerace</li>
+                <li>Uvolnění svalových vláken</li>
+                <li>Prevence rizika zranění</li>
+                <li>Celkové zklidnění a uvolnění těla </li>
+            </ul>
+            <img src="/img/flex.webp" alt="flexibility">
+        </div>
+    </section>
+    <section class="contact">
+        <h3 id="contact">KONTAKT</h3>
+        <hr>
+        <div class="container">
+            <div class="row row-gap-3 row-gap-2">
+                <div class="col-lg-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d160.01245454511712!2d14.493576412985076!3d50.08255584907173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2saz!4v1736587055714!5m2!1str!2saz"
+                        width="100%" height="411px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div>
+                        <h4>KONTAKTUJTE NÁS</h4>
+                        <h5>Adresa:</h5>
+                        <p class="mb-5">
+                            Hostýnská 520/14 (1. patro) <br>
+                            Praha 10, 108 00
+                        </p>
+                        <h5>Kontakt:</h5>
+                        <p>
+                            chrampohybu@email.cz <br>
+                            + 420 777 473 373
+                        </p>
+                        <div class="socials mt-5">
+                            <p style="font-size: 14px;">SOCIAL</p>
+                            <ul style="width:118px">
+                                <li><a href="https://www.facebook.com/chram.pohybu/"><img loading="lazy" width="22px"
+                                            src="/img/fb.png" alt=""></a></li>
+                                <li><a href="https://www.instagram.com/chrampohybu/"><img loading="lazy" width="24px"
+                                            style="margin-top: 4px;" src="/img/ig.png" alt=""></a></li>
+                                <li><a href="https://www.tiktok.com/@chram_pohybu"><img loading="lazy" width="20px"
+                                            src="/img/tt.png" alt=""></a></li>
+                                <li><a href="mailto:chrampohybu@email.cz"><img loading="lazy" width="22px"
+                                            src="/img/envelope.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5">
+        <img src="/img/image.webp" alt="logo" width="100px">
+        <p>
+            PODMÍNKY UŽITÍ A OCHRANA SOUKROMÍ<br> ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ<br> COPYRIGHT © CHRÁM POHYBU
+        </p>
+    </footer>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
